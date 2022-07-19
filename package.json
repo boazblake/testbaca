@@ -15,7 +15,6 @@
     "send": "fnm use 12; yarn build; git add .; git commit -m 'build'; git push; git push gitlab master"
   },
   "dependencies": {
-    "@boazblake/fun-config": "https://github.com/boazblake/fun-config",
     "@bunchtogether/vite-plugin-flow": "^1.0.2",
     "@mithril-icons/clarity": "^1.2.0",
     "daggy": "^1.5.0",

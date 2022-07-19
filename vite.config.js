@@ -34,8 +34,8 @@ const imageMin = () => viteImagemin({
 
 
 const sharper = () => vsharp({
-  src: "app/assets",
-  dest: "docs",
+  src: "assets/",
+  dest: "dist",
   imageExt: ["jpg", "png", "svg", "HEIC"],
   tasks: [
     [
@@ -60,13 +60,14 @@ export default defineConfig({
       stream: "mithril-stream",
       m: "mithril",
       "@": path.resolve(__dirname, "./app"),
+      "assets": path.resolve(__dirname, "./assets"),
       // "Models": path.resolve(__dirname, "./app/Models"),
       // "Utils": path.resolve(__dirname, "./app/Utils"),
       // "Layouts": path.resolve(__dirname, "./app/Layouts"),
       // "Pages": path.resolve(__dirname, "./app/Pages"),
     },
   },
-  build: { outDir: "docs" },
+  build: { outDir: "dist" },
   server: {
     open: true,
   },

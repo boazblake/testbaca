@@ -41,7 +41,7 @@ export default {
             alt: "logo",
             id: "nav-logo",
             href: "/",
-            src: "@/assets/images/baca-logo.webp",
+            src: "assets/images/baca-logo.webp",
           })
         )
       ),

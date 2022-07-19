@@ -3,22 +3,22 @@
   "name": "Bonham Acres Civic Association",
   "icons": [
     {
-      "src": "./app/assets/icons/icon-256x256.webp",
+      "src": "./assets/icons/icon-256x256.webp",
       "sizes": "256x256",
       "type": "image/webp"
     },
     {
-      "src": "./app/assets/icons/icon-192x192.webp",
+      "src": "./assets/icons/icon-192x192.webp",
       "sizes": "192x192",
       "type": "image/webp"
     },
     {
-      "src": "./app/assets/icons/icon-384x384.webp",
+      "src": "./assets/icons/icon-384x384.webp",
       "sizes": "384x384",
       "type": "image/webp"
     },
     {
-      "src": "./app/assets/icons/icon-512x512.webp",
+      "src": "./assets/icons/icon-512x512.webp",
       "sizes": "512x512",
       "type": "image/webp"
     }

@@ -42,12 +42,12 @@ const Post = {
         m(
           "figure.col-3.is-horizontal-align",
           m("img", {
-            src: blog.thumb || "app/assets/images/main.webp",
+            src: blog.thumb || "assets/images/main.webp",
             onclick: (e) => {
               mdl.modal.content(
                 m("img.is-center", {
                   style: { height: "100%", margin: "0 auto" },
-                  src: blog.img || "app/assets/images/main.webp",
+                  src: blog.img || "assets/images/main.webp",
                   alt: "",
                 })
               )

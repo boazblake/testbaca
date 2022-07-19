@@ -7,7 +7,7 @@ const Loader = () => {
       m(
         "#logo-container",
         { onremove: FadeBack },
-        m("img#heartbeat.heartbeat", { src: "@/assets/images/logo.webp" })
+        m("img#heartbeat.heartbeat", { src: "assets/images/logo.webp" })
       ),
   }
 }
