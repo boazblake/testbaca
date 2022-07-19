@@ -35,7 +35,7 @@ const imageMin = () => viteImagemin({
 
 const sharper = () => vsharp({
   src: "assets/",
-  dest: "dist",
+  dest: "docs",
   imageExt: ["jpg", "png", "svg", "HEIC"],
   tasks: [
     [
@@ -67,7 +67,7 @@ export default defineConfig({
       // "Pages": path.resolve(__dirname, "./app/Pages"),
     },
   },
-  build: { outDir: "dist" },
+  build: { outDir: "docs" },
   server: {
     open: true,
   },
