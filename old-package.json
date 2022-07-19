@@ -1,0 +1,50 @@
+{
+  "name": "BACA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "yarn cache clean && rm -rf ./docs && rm -rf ./node_modules",
+    "clean-start": "rm -rf docs && yarn run start",
+    "fresh": "yarn run clean && yarn install && yarn run start",
+    "debug": "export LOGGY_STACKS=1 && yarn run start",
+    "start": "ENVIRONMENT=dev brunch watch --server",
+    "build:pre": "rm -rf docs",
+    "build": "yarn run build:pre && brunch build --production",
+    "send": "fnm use 12; yarn build; git add .; git commit -m 'build'; git push; git push gitlab master"
+  },
+  "dependencies": {
+    "@boazblake/fun-config": "https://github.com/boazblake/fun-config",
+    "@mithril-icons/clarity": "^1.2.0",
+    "daggy": "^1.5.0",
+    "data.either": "^1.5.2",
+    "data.maybe": "^1.2.3",
+    "data.task": "^3.1.2",
+    "data.validation": "^1.3.1",
+    "dayjs": "^1.10.7",
+    "mithril": "2.2.0",
+    "mithril-stream": "^2.0.0",
+    "ramda": "^0.27.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.14.5",
+    "auto-reload-brunch": "^2.7.1",
+    "autoprefixer": "^9.7.6",
+    "babel-brunch": "7.0.1",
+    "brunch": "3.0.0",
+    "clean-css-brunch": "^3.0.0",
+    "copycat-brunch": "1.1.1",
+    "gzip-brunch": "^2.0.0",
+    "imagemin-brunch": "^1.1.0",
+    "imagemin-webp": "^6.0.0",
+    "postcss-brunch": "^3.0.0",
+    "postcss-scss": "^2.0.0",
+    "sass-brunch": "3.0.0",
+    "sharp-brunch": "^1.0.6",
+    "size-limit": "^4.5.0",
+    "slimdown-js": "^0.4.1",
+    "terser-brunch": "^4.0.0",
+    "workbox-brunch": "^1.0.2"
+  }
+}

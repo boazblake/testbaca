@@ -1,0 +1,46 @@
+.masonry
+  position: relative
+  margin: auto
+  width: 80vmin
+  display: grid
+  grid-gap: 1vmin
+  grid-auto-rows: 1fr
+  grid-template-columns: repeat(6, 1fr)
+  grid-auto-flow: dense
+
+  &:before
+    content: ''
+    height: 0
+    width: 100%
+    padding-bottom: 100%
+    grid-column: 1 / 1
+    grid-row: 1 / 1
+
+  &-item
+    position: relative
+
+    &:first-child
+      grid-column: 1 / 1
+      grid-row: 1 / 1
+
+    &:nth-child(3n)
+      grid-row: span 2
+
+    &:nth-child(4n),
+    &:nth-child(7n)
+      grid-column: span 1
+      grid-row: span 1
+
+    &:nth-child(5n)
+      grid-column: span 2
+
+    &:hover
+      .masonry-image
+        transform: scale(0.9)
+
+  &-image
+    height: 100%
+    width: 100%
+    object-fit: cover
+    transition: transform .3s ease
+    position: absolute

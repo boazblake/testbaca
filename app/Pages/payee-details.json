@@ -1,0 +1,80 @@
+{
+  "create_time": "2020-12-02T22:12:50Z",
+  "update_time": "2020-12-02T22:13:04Z",
+  "id": "79J01521X09721837",
+  "intent": "CAPTURE",
+  "status": "COMPLETED",
+  "payer": {
+    "email_address": "sb-qx1yy3945835@personal.example.com",
+    "payer_id": "EMQ58WBBY6MEA",
+    "address": { "country_code": "US" },
+    "name": { "given_name": "John", "surname": "Doe" }
+  },
+  "purchase_units": [
+    {
+      "reference_id": "default",
+      "amount": { "value": "300.00", "currency_code": "USD" },
+      "payee": {
+        "email_address": "sb-mivlh3949976@business.example.com",
+        "merchant_id": "4B85VCFBMAMWS"
+      },
+      "shipping": {
+        "name": { "full_name": "John Doe" },
+        "address": {
+          "address_line_1": "1 Main St",
+          "admin_area_2": "San Jose",
+          "admin_area_1": "CA",
+          "postal_code": "95131",
+          "country_code": "US"
+        }
+      },
+      "payments": {
+        "captures": [
+          {
+            "status": "COMPLETED",
+            "id": "5C731098XU216945Y",
+            "final_capture": true,
+            "create_time": "2020-12-02T22:13:04Z",
+            "update_time": "2020-12-02T22:13:04Z",
+            "amount": { "value": "300.00", "currency_code": "USD" },
+            "seller_protection": {
+              "status": "ELIGIBLE",
+              "dispute_categories": [
+                "ITEM_NOT_RECEIVED",
+                "UNAUTHORIZED_TRANSACTION"
+              ]
+            },
+            "links": [
+              {
+                "href": "https://api.sandbox.paypal.com/v2/payments/captures/5C731098XU216945Y",
+                "rel": "self",
+                "method": "GET",
+                "title": "GET"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v2/payments/captures/5C731098XU216945Y/refund",
+                "rel": "refund",
+                "method": "POST",
+                "title": "POST"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v2/checkout/orders/79J01521X09721837",
+                "rel": "up",
+                "method": "GET",
+                "title": "GET"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/checkout/orders/79J01521X09721837",
+      "rel": "self",
+      "method": "GET",
+      "title": "GET"
+    }
+  ]
+}
