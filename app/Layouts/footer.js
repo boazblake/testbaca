@@ -20,7 +20,7 @@ const Footer = () => {
                 },
                 m("img", {
                   style: { width: "50px", height: "50px" },
-                  src: "assets/icons/facebook.webp",
+                  src: "icons/facebook.webp",
                 })
               ),
               m(
@@ -32,7 +32,7 @@ const Footer = () => {
                 },
                 m("img", {
                   style: { width: "50px", height: "50px" },
-                  src: "assets/icons/nextdoor.webp",
+                  src: "icons/nextdoor.webp",
                 })
               ),
               m(
@@ -44,7 +44,7 @@ const Footer = () => {
                 },
                 m("img", {
                   style: { width: "50px", height: "50px" },
-                  src: "assets/icons/gmail.webp",
+                  src: "icons/gmail.webp",
                 })
               )
             ),

@@ -17,7 +17,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
-    "outDir": "dist",
+    "outDir": "docs",
     "rootDir": ".",
     "strict": true,
     "target": "es6"

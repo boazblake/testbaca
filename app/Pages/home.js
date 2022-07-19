@@ -133,7 +133,7 @@ const Blog = {
         ".card.opacity-overlay.is-vertical-align m6 row",
         {},
         m("img", {
-          src: blog.img || "assets/images/main.webp",
+          src: blog.img || "images/main.webp",
           alt: "",
           style: {
             objectFit: "contain",

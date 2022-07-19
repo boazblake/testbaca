@@ -19,7 +19,7 @@ const About = (mdl) => {
               ),
               m(
                 "figure.col",
-                m("img.height-auto", { src: "app/assets/images/IMG_3216.webp" })
+                m("img.height-auto", { src: "app/images/IMG_3216.webp" })
               )
             )
           )
@@ -35,7 +35,7 @@ const About = (mdl) => {
               m(
                 "figure.col",
                 m("img.height-auto", {
-                  src: "app/assets/images/baca-map.webp",
+                  src: "app/images/baca-map.webp",
                 })
               ),
               m(

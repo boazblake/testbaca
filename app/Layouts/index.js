@@ -17,9 +17,9 @@ import {
   deleteEvent,
   resetState,
   uploadImage,
-} from "../Pages/Events/index.js"
-import Editor from "../Pages/Events/editor.js"
-import Event from "../Pages/Events/event.js"
+} from "@/Pages/Events/index.js"
+import Editor from "@/Pages/Events/editor.js"
+import Event from "@/Pages/Events/event.js"
 
 const state = {
   status: "loading",
